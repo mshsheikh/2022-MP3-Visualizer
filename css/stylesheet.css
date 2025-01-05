@@ -1,0 +1,108 @@
+/* General Styling */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #1e1e2f, #272822);
+  color: #fefefe;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Header */
+header {
+  margin: 20px auto;
+  padding: 10px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #ff8c00;
+  animation: pulse 2s infinite;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #aaa;
+  margin-top: 5px;
+}
+
+/* File Upload Section */
+#fileWrapper {
+  margin: 20px auto;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#fileWrapper:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+.file-label {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ff8c00;
+}
+
+.file-input {
+  display: none;
+}
+
+.label-text {
+  font-size: 1.1rem;
+  margin-top: 10px;
+}
+
+/* Visualizer */
+#visualizer_wrapper {
+  margin: 30px auto;
+  border: 2px solid #ff8c00;
+  border-radius: 10px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+canvas {
+  display: block;
+  margin: auto;
+  border-radius: 10px;
+}
+
+/* Footer */
+footer {
+  position: fixed;
+  bottom: 10px;
+  width: 100%;
+  color: #aaa;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #ff8c00;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+/* Animations */
+@keyframes pulse {
+  0%,
+  100% {
+    text-shadow: 0 0 15px #ff8c00, 0 0 30px #ff4500;
+  }
+  50% {
+    text-shadow: 0 0 30px #ff8c00, 0 0 60px #ff4500;
+  }
+}
